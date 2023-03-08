@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon"
+        href="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg" />
+    <title>Aether — Documentation Template</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="description" content="Aether is a clean documentation and knowledge-base template for Super." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://aether.super.site/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aether — Documentation Template" />
+    <meta property="og:description" content="Aether is a clean documentation and knowledge-base template for Super." />
+    <meta property="og:image"
+        content="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/cover/1cd40d53-9118-4244-aa75-7788ec97cf13.jpg" />
+    <meta property="og:image:alt" content="Aether — Documentation Template" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Aether — Documentation Template" />
+    <link rel="preload" as="image"
+        imageSrcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 640w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 750w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 828w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1080w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1200w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1920w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 2048w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 3840w"
+        imageSizes="100vw" />
+    <link rel="preload" as="image"
+        imageSrcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 640w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 750w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 828w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1080w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1200w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1920w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 2048w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 3840w"
+        imageSizes="100vw" />
+    <link rel="preload" as="image" imageSrcSet="/images/super-icon.svg 1x" />
+    <meta name="next-head-count" content="19" />
+    <link rel="preload"
+        href="https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2"
+        crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload"
+        href="https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.woff2"
+        crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload"
+        href="https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.woff2"
+        crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload"
+        href="https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2"
+        crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload" href="https://sites.super.so/aether/style.css" as="style" />
+    <link rel="stylesheet" href="https://sites.super.so/aether/style.css" />
+    <link rel="preload" href="/_next/static/css/2d8655981280dfb4.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/2d8655981280dfb4.css" data-n-g="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script defer="" src="/_next/static/chunks/3697.93dc20f4667945cf.js"></script>
+    <script defer="" src="/_next/static/chunks/6617.81e2d1fe929d253f.js"></script>
+    <script defer="" src="/_next/static/chunks/8126.dbd1a448f3868a1a.js"></script>
+    <script defer="" src="/_next/static/chunks/9653.fbdcd505209f9f80.js"></script>
+    <script defer="" src="/_next/static/chunks/5581.cc5310ef6f64868b.js"></script>
+    <script defer="" src="/_next/static/chunks/1512.62aed9f74d1f504a.js"></script>
+    <script defer="" src="/_next/static/chunks/919.a7d184b22a886898.js"></script>
+    <script defer="" src="/_next/static/chunks/6830.402125aef26a8e2d.js"></script>
+    <script defer="" src="/_next/static/chunks/7983.df9c2b6a9f3945b6.js"></script>
+    <script src="/_next/static/chunks/webpack-ac92cd81ec00a5d0.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-695e56344d65da02.js" defer=""></script>
+    <script src="/_next/static/chunks/main-1926f984cf62c6ed.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-90b30171e6ca2c7d.js" defer=""></script>
+    <script src="/_next/static/chunks/7766-2673df2440f67852.js" defer=""></script>
+    <script src="/_next/static/chunks/8812-0f6a52e324624553.js" defer=""></script>
+    <script src="/_next/static/chunks/5606-ec26752f5d9154de.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-c9072f442fb32e93.js" defer=""></script>
+    <script src="/_next/static/mws3MSmYChBGMcK2oDpFc/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/mws3MSmYChBGMcK2oDpFc/_ssgManifest.js" defer=""></script>
+    <style id="__jsx-4172908243">
+        :root {
+            --color-text-default: rgb(55, 53, 47);
+            --color-text-default-light: rgba(55, 53, 47, 0.6);
+            --color-text-gray: rgb(155, 154, 151);
+            --color-text-brown: rgb(100, 71, 58);
+            --color-text-orange: rgb(217, 115, 13);
+            --color-text-yellow: rgb(223, 171, 1);
+            --color-text-green: rgb(15, 123, 108);
+            --color-text-blue: rgb(11, 110, 153);
+            --color-text-purple: rgb(105, 64, 165);
+            --color-text-pink: rgb(173, 26, 114);
+            --color-text-red: rgb(224, 62, 62);
+            --color-bg-default: rgb(255, 255, 255);
+            --color-bg-gray: rgb(235, 236, 237);
+            --color-bg-brown: rgb(233, 229, 227);
+            --color-bg-orange: rgb(250, 235, 221);
+            --color-bg-yellow: rgb(251, 243, 219);
+            --color-bg-green: rgb(221, 237, 234);
+            --color-bg-blue: rgb(221, 235, 241);
+            --color-bg-purple: rgb(234, 228, 242);
+            --color-bg-pink: rgb(244, 223, 235);
+            --color-bg-red: rgb(251, 228, 228);
+            --color-bg-gray-light: rgba(235, 236, 237, 0.3);
+            --color-bg-brown-light: rgba(233, 229, 227, 0.3);
+            --color-bg-orange-light: rgba(250, 235, 221, 0.3);
+            --color-bg-yellow-light: rgba(251, 243, 219, 0.3);
+            --color-bg-green-light: rgba(221, 237, 234, 0.3);
+            --color-bg-blue-light: rgba(221, 235, 241, 0.3);
+            --color-bg-purple-light: rgba(234, 228, 242, 0.3);
+            --color-bg-pink-light: rgba(244, 223, 235, 0.3);
+            --color-bg-red-light: rgba(251, 228, 228, 0.3);
+            --color-pill-default: rgba(206, 205, 202, 0.5);
+            --color-pill-gray: rgba(155, 154, 151, 0.4);
+            --color-pill-brown: rgba(140, 46, 0, 0.2);
+            --color-pill-orange: rgba(245, 93, 0, 0.2);
+            --color-pill-yellow: rgba(233, 168, 0, 0.2);
+            --color-pill-green: rgba(0, 135, 107, 0.2);
+            --color-pill-blue: rgba(0, 120, 223, 0.2);
+            --color-pill-purple: rgba(103, 36, 222, 0.2);
+            --color-pill-pink: rgba(221, 0, 129, 0.2);
+            --color-pill-red: rgba(255, 0, 26, 0.2);
+            --color-ui-hover-bg: rgba(239, 239, 239);
+            --color-card-bg: rgb(255, 255, 255);
+            --color-checkbox-bg: rgb(46, 170, 220);
+            ;
+            --color-border-default: rgba(235, 236, 237, 0.8);
+            --color-border-dark: rgba(55, 53, 47, 0.16);
+            --color-code-bg: rgba(239, 239, 239);
+            --scrollbar-background-color: #fafafa;
+            --scrollbar-thumb-color: #c1c1c1;
+            --scrollbar-border-color: #e8e8e8;
+            --navbar-text-color: var(--color-text-default);
+            --navbar-background-color: var(--color-bg-default);
+            --navbar-button-text-color: rgba(70, 80, 89, 1);
+            --navbar-button-background-color: rgba(228, 245, 254, 1);
+            --navbar-menu-background-color: var(--navbar-background-color);
+            --footer-text-color: var(--color-text-default);
+            --footer-background-color: var(--color-bg-default);
+            --color-calendar-weekend-bg: #f7f6f3
+        }
+    </style>
+    <style id="__jsx-4009894801">
+        :root {
+            --padding-layout: 0.6rem;
+            --border-radii-layout: 5px;
+            --border-thickness-layout: 1px;
+            --border-type-layout: solid;
+            --border-layout: var(--border-thickness-layout) var(--border-type-layout) var(--color-border-default);
+            --layout-max-width: 900px;
+            --column-spacing: 46px;
+            --page-display: unset;
+            --padding-right: calc(env(safe-area-inset-right) + 96px);
+            --padding-left: calc(env(safe-area-inset-left) + 96px);
+            --padding-right-mobile: calc(env(safe-area-inset-right) + 24px);
+            --padding-left-mobile: calc(env(safe-area-inset-left) + 24px);
+            --header-cover-height: 30vh;
+            --header-title-align: left;
+            --header-icon-align: -112px auto auto auto;
+            --header-display: block;
+            --collection-header-border: var(--border-layout);
+            --collection-table-cell-padding: calc(var(--padding-layout) - 0.3rem) calc(var(--padding-layout) - 0.1rem);
+            --collection-list-item-padding: calc(var(--padding-layout) - 0.5rem);
+            --collection-list-item-border-radii: calc(var(--border-radii-layout) - 1px);
+            --collection-card-padding: 0px;
+            --collection-card-title-padding: 0px;
+            --collection-card-content-padding: var(--padding-layout);
+            --collection-card-border-radii: var(--border-radii-layout);
+            --collection-card-gap: 10px;
+            --collection-card-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+            --collection-card-title-size: 0.875rem;
+            --collection-card-cover-height-small: 128px;
+            --collection-card-cover-size-small: 172px;
+            --collection-card-cover-height-medium: 200px;
+            --collection-card-cover-size-medium: 260px;
+            --collection-card-cover-height-large: 200px;
+            --collection-card-cover-size-large: 320px;
+            --collection-card-icon-display: inline-flex;
+            --callout-padding: calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.1em);
+            --callout-border-radii: calc(var(--border-radii-layout) - 2px);
+            --callout-border: var(--border-layout);
+            --callout-icon-display: block;
+            --callout-shadow: none;
+            --file-border-radii: calc(var(--border-radii-layout) - 2px);
+            --equation-border-radii: calc(var(--border-radii-layout) - 2px);
+            --divider-border: var(--border-layout);
+            --quote-border: calc(var(--border-thickness-layout) + 2px) solid currentcolor;
+            --code-padding: calc(var(--padding-layout) + 1.4rem);
+            --code-border-radii: var(--border-radii-layout);
+            --tweet-padding: calc(var(--padding-layout) + 0.65rem) calc(var(--padding-layout) + 0.65rem) calc(var(--padding-layout) + 0.05rem) calc(var(--padding-layout) + 0.65rem);
+            --tweet-border-radii: var(--border-radii-layout);
+            --tweet-border: var(--border-layout);
+            --bookmark-padding: calc(var(--padding-layout) + 0.15rem) 0px calc(var(--padding-layout) + 0.025rem) calc(var(--padding-layout) + 0.275rem);
+            --bookmark-border-radii: var(--border-radii-layout);
+            --bookmark-border: var(--border-layout);
+            --bookmark-image-border-radii: 0px calc(var(--border-radii-layout) - 1px) calc(var(--border-radii-layout) - 1px) 0px;
+            --embed-border-radii: calc(var(--border-radii-layout) - 5px);
+            --image-border-radii: calc(var(--border-radii-layout) - 5px);
+            --title-size: 2.5rem;
+            --quote-size: 1.2rem;
+            --heading-size: 1rem;
+            --primary-font: Inter, Inter-fallback, Helvetica,
+                Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Noto Color Emoji,
+                Segoe UI Symbol, Android Emoji, EmojiSymbols, -apple-system,
+                BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Noto Sans,
+                sans-serif;
+            --secondary-font: Inter, Inter-fallback, Helvetica,
+                Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Noto Color Emoji,
+                Segoe UI Symbol, Android Emoji, EmojiSymbols, -apple-system,
+                BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Noto Sans,
+                sans-serif;
+            --text-weight: normal;
+            --heading-weight: 600;
+            --heading1-size: calc(var(--heading-size) * 1.875);
+            --heading2-size: calc(var(--heading-size) * 1.5);
+            --heading3-size: calc(var(--heading-size) * 1.25);
+            --heading4-size: calc(var(--heading-size) * 1);
+            --heading5-size: calc(var(--heading-size) * 0.8125);
+            --scrollbar-width: 15px;
+            --navbar-height: 70px;
+            --navbar-shadow: ;
+            --navbar-button-border-radii: 50px
+        }
+
+        html {
+            font-size: 16px;
+            scroll-padding-top: 76px
+        }
+
+        body {
+            font-family: var(--secondary-font)
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: "Inter";
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot");
+            /* IE9 Compat Modes */
+            src: local(""),
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"),
+                /* Super Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff") format("woff"),
+                /* Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"),
+                /* Safari, Android, iOS */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.svg#Inter") format("svg");
+            /* Legacy iOS */
+        }
+
+        @font-face {
+            font-family: "Inter";
+            font-style: normal;
+            font-display: swap;
+            font-weight: 500;
+            src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.eot");
+            /* IE9 Compat Modes */
+            src: local(""),
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"),
+                /* Super Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.woff") format("woff"),
+                /* Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.ttf") format("truetype"),
+                /* Safari, Android, iOS */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.svg#Inter") format("svg");
+            /* Legacy iOS */
+        }
+
+        @font-face {
+            font-family: "Inter";
+            font-style: normal;
+            font-display: swap;
+            font-weight: 600;
+            src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.eot");
+            /* IE9 Compat Modes */
+            src: local(""),
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.woff2") format("woff2"),
+                /* Super Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.woff") format("woff"),
+                /* Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.ttf") format("truetype"),
+                /* Safari, Android, iOS */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.svg#Inter") format("svg");
+            /* Legacy iOS */
+        }
+
+        @font-face {
+            font-family: "Inter";
+            font-style: normal;
+            font-display: swap;
+            font-weight: 700;
+            src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.eot");
+            /* IE9 Compat Modes */
+            src: local(""),
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"),
+                /* Super Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.woff") format("woff"),
+                /* Modern Browsers */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.ttf") format("truetype"),
+                /* Safari, Android, iOS */
+                url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.svg#Inter") format("svg");
+            /* Legacy iOS */
+        }
+
+        @font-face {
+            font-family: "Inter-fallback";
+            size-adjust: 106.98999999999994%;
+            ascent-override: 90%;
+            src: local("Arial");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div id="page-index" class="super-root page__index">
+            <div class="super-navbar minimal" style="position:sticky">
+                <div class="super-navbar__content"><a class="notion-link super-navbar__logo" href="/">
+                        <div class="super-navbar__logo-image" style="width:90px"><span
+                                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                    alt="Logo" sizes="100vw"
+                                    srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 640w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 750w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 828w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1080w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1200w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 1920w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 2048w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg 3840w"
+                                    src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg"
+                                    decoding="async" data-nimg="fill"
+                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left" /></span>
+                        </div>
+                    </a>
+                    <div class="super-navbar__item-list"><a class="notion-link super-navbar__item"
+                            href="/getting-started">Getting started</a><a class="notion-link super-navbar__item"
+                            href="/using-aether">Using Aether</a><a class="notion-link super-navbar__item"
+                            href="/blocks">Blocks</a><a class="notion-link super-navbar__item"
+                            href="/documentation">Documentation</a><a class="notion-link super-navbar__item"
+                            href="/design-system">Design System</a><a href="https://superhq.notion.site/Aether-"
+                            class="notion-link super-navbar__item" target="_blank"
+                            rel="noopener noreferrer">Duplicate</a></div>
+                    <div class="super-navbar__actions "><a href="https://s.super.so/aether" class="notion-link"
+                            target="_blank" rel="noopener noreferrer">
+                            <div class="super-navbar__cta">Duplicate</div>
+                        </a>
+                        <div class="super-navbar__button super-navbar__search"><svg
+                                class="notion-icon notion-icon__search" viewBox="0 0 24 24"
+                                style="width:1.25rem;height:1.25rem;fill:var(--color-text-default-light)">
+                                <path class="notion-icon__search-path"
+                                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
+                                </path>
+                            </svg></div>
+                        <div class="super-navbar__button super-navbar__menu-open"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24"
+                                height="24" style="width:1.25rem;height:1.25rem;fill:var(--color-text-default-light)">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+            <div class="super-content-wrapper">
+                <div class="notion-header page">
+                    <div class="notion-header__cover no-cover"></div>
+                    <div class="notion-header__content no-cover has-icon-image">
+                        <div class="notion-header__title-wrapper">
+                            <div class="notion-header__icon-wrapper no-cover has-icon-image"><span
+                                    style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                        alt="Aether" sizes="100vw"
+                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 640w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 750w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 828w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1080w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1200w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 1920w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 2048w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg 3840w"
+                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg"
+                                        decoding="async" data-nimg="fill" class="notion-header__icon"
+                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center" /></span>
+                            </div>
+                            <h1 class="notion-header__title">Aether</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="super-content has-footer">
+                    <article id="block-27f6a167a6d94dc18877ab25931cde6f" class="notion-root full-width">
+                        <div id="block-38bf2c4c7c934bcf9b08a16e5c3602de" class="notion-column-list">
+                            <div id="block-123d6ef2e0c340219901710c45d02a1a" class="notion-column"
+                                style="width:calc((100% - var(--column-spacing) * 2) * 0.2499999999999999)">
+                                <div id="block-f196d723406f4eb18fedcc678bda275e" class="notion-text">
+                                    <p class="notion-text__content"><span class="notion-semantic-string"><span><span
+                                                    class="highlighted-color color-gray">Getting
+                                                    started</span></span></span></p>
+                                </div><a id="block-getting-started" class="notion-link notion-page"
+                                    href="/getting-started">
+                                    <div>
+                                        <div class="notion-page__icon"><span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                    alt="Getting Started"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    decoding="async" data-nimg="fixed" class="notion-icon"
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                        alt="Getting Started"
+                                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/692227fd-0b99-4cec-8c41-489c126164bc.svg 1x"
+                                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/692227fd-0b99-4cec-8c41-489c126164bc.svg"
+                                                        decoding="async" data-nimg="fixed"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                        class="notion-icon" loading="lazy" /></noscript></span></div>
+                                        <div class="notion-page__title"><span
+                                                class="notion-semantic-string"><span>Getting Started</span></span></div>
+                                    </div>
+                                </a><a id="block-using-aether" class="notion-link notion-page" href="/using-aether">
+                                    <div>
+                                        <div class="notion-page__icon"><span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                    alt="Using Aether"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    decoding="async" data-nimg="fixed" class="notion-icon"
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                        alt="Using Aether"
+                                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/c056533b-a96b-4d28-a4bf-fdc3ab4cb09d.svg 1x"
+                                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/c056533b-a96b-4d28-a4bf-fdc3ab4cb09d.svg"
+                                                        decoding="async" data-nimg="fixed"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                        class="notion-icon" loading="lazy" /></noscript></span></div>
+                                        <div class="notion-page__title"><span class="notion-semantic-string"><span>Using
+                                                    Aether</span></span></div>
+                                    </div>
+                                </a><a id="block-blocks" class="notion-link notion-page" href="/blocks">
+                                    <div>
+                                        <div class="notion-page__icon"><span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                    alt="Blocks"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    decoding="async" data-nimg="fixed" class="notion-icon"
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                        alt="Blocks"
+                                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/fb3e18fe-8439-41e4-aa35-43b5c2b35556.svg 1x"
+                                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/fb3e18fe-8439-41e4-aa35-43b5c2b35556.svg"
+                                                        decoding="async" data-nimg="fixed"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                        class="notion-icon" loading="lazy" /></noscript></span></div>
+                                        <div class="notion-page__title"><span
+                                                class="notion-semantic-string"><span>Blocks</span></span></div>
+                                    </div>
+                                </a>
+                                <div id="block-a71422eeb3c44613bdef657e8f38aca7" class="notion-text">
+                                    <p class="notion-text__content"><span class="notion-semantic-string"><span><span
+                                                    class="highlighted-color color-gray">Use cases</span></span></span>
+                                    </p>
+                                </div><a id="block-documentation" class="notion-link notion-page" href="/documentation">
+                                    <div>
+                                        <div class="notion-page__icon"><span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                    alt="Documentation"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    decoding="async" data-nimg="fixed" class="notion-icon"
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                        alt="Documentation"
+                                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/d9d93f6e-6dac-4ac2-b11c-29e8e3c3c0ad.svg 1x"
+                                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/d9d93f6e-6dac-4ac2-b11c-29e8e3c3c0ad.svg"
+                                                        decoding="async" data-nimg="fixed"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                        class="notion-icon" loading="lazy" /></noscript></span></div>
+                                        <div class="notion-page__title"><span
+                                                class="notion-semantic-string"><span>Documentation</span></span></div>
+                                    </div>
+                                </a><a id="block-design-system" class="notion-link notion-page" href="/design-system">
+                                    <div>
+                                        <div class="notion-page__icon"><span
+                                                style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                    alt="Design System"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    decoding="async" data-nimg="fixed" class="notion-icon"
+                                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                        alt="Design System"
+                                                        srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/49fbc82e-f38e-479c-9463-4c20b1fe7c7b.svg 1x"
+                                                        src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/49fbc82e-f38e-479c-9463-4c20b1fe7c7b.svg"
+                                                        decoding="async" data-nimg="fixed"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                        class="notion-icon" loading="lazy" /></noscript></span></div>
+                                        <div class="notion-page__title"><span
+                                                class="notion-semantic-string"><span>Design System</span></span></div>
+                                    </div>
+                                </a>
+                                <div id="block-41b2a597046744a0aa07c97409fcebf5" class="notion-toggle closed bg-gray">
+                                    <div class="notion-toggle__summary">
+                                        <div class="notion-toggle__trigger">
+                                            <div class="notion-toggle__trigger_icon"><span>‣</span></div>
+                                        </div><span class="notion-semantic-string"><span><strong><span
+                                                        class="highlighted-color color-gray">Control
+                                                        Panel</span></strong></span></span>
+                                    </div>
+                                    <div class="notion-toggle__content">
+                                        <div id="block-0f3b67d8771c41caae698eb80da67ad7" class="notion-divider"></div>
+                                        <div id="block-3b77179aa72a4a9fac1af98a18b32a6c" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-b577276173ed4bfab18b9667b0b9190b" class="notion-text">
+                                            <p class="notion-text__content"><span
+                                                    class="notion-semantic-string"><span><strong><span
+                                                                class="highlighted-color color-gray">Use the button
+                                                                below to add a new page. When it&#x27;s ready to go
+                                                                live, drag it up into the synced block in the sidebar
+                                                                above.</span></strong></span></span></p>
+                                        </div>
+                                        <div id="block-b61c2587246844e484f521641b0767b5" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-75326d296c1b4a7c81b0a17d7976cde6" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-9a3dcf133fc440caa4c703daf0b4e16c" class="notion-divider"></div>
+                                        <div id="block-885dd2bda1dd4cb5a4ab03c5b7468098" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div><a id="block-8c59febf3e2e494bb9b1bf9f8c7a8656"
+                                            class="notion-link notion-page" href="/8c59febf3e2e494bb9b1bf9f8c7a8656">
+                                            <div>
+                                                <div class="notion-page__icon"><span
+                                                        style="box-sizing:border-box;display:inline-block;overflow:hidden;width:22px;height:22px;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><img
+                                                            alt="Aether Tools"
+                                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                            decoding="async" data-nimg="fixed" class="notion-icon"
+                                                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center" /><noscript><img
+                                                                alt="Aether Tools"
+                                                                srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/4f1c45f5-97d3-434f-995f-362047416b72.svg 1x"
+                                                                src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/4f1c45f5-97d3-434f-995f-362047416b72.svg"
+                                                                decoding="async" data-nimg="fixed"
+                                                                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:center"
+                                                                class="notion-icon" loading="lazy" /></noscript></span>
+                                                </div>
+                                                <div class="notion-page__title"><span
+                                                        class="notion-semantic-string"><span>Aether Tools</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div id="block-5062ba111548409d8ca6c6bb37686bc5" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-2085af8413a44760bdc8471e370e0379" class="notion-divider"></div>
+                                        <div id="block-1dbf19e525e34fb7afc093662c4dc7e1" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-3c688c9d85cb4b64842c267ae5fd3573" class="notion-text">
+                                            <p class="notion-text__content"><span
+                                                    class="notion-semantic-string"><span><strong><span
+                                                                class="highlighted-color color-gray">If you want to hide
+                                                                pages, you can move them into the toggle below
+                                                                ↓</span></strong></span></span></p>
+                                        </div>
+                                        <div id="block-18c6692e05354ad6911031e9bb22c7bb" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                        <div id="block-ac51fe8942444594a1d848f7ea5bf2d8"
+                                            class="notion-toggle closed bg-gray">
+                                            <div class="notion-toggle__summary">
+                                                <div class="notion-toggle__trigger">
+                                                    <div class="notion-toggle__trigger_icon"><span>‣</span></div>
+                                                </div><span class="notion-semantic-string"><span><span
+                                                            class="highlighted-color color-gray">Hidden
+                                                            Pages</span></span></span>
+                                            </div>
+                                            <div class="notion-toggle__content">
+                                                <div id="block-e5ddbc52b9b248978ea265c97ede825f" class="notion-text">
+                                                    <p class="notion-text__content"><span
+                                                            class="notion-semantic-string"></span></p>
+                                                </div>
+                                                <div id="block-a188e6084a264bda99330568be8881da" class="notion-text">
+                                                    <p class="notion-text__content"><span
+                                                            class="notion-semantic-string"></span></p>
+                                                </div>
+                                                <div id="block-9f318e3dfea64b6c9c5799639e7bc4bb" class="notion-text">
+                                                    <p class="notion-text__content"><span
+                                                            class="notion-semantic-string"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="block-fef2b3ed7de6441babd0793c3325ab9d" class="notion-text">
+                                            <p class="notion-text__content"><span class="notion-semantic-string"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="block-bce2bb4fa2f64185b1b5c494ee0dd7e6" class="notion-column"
+                                style="width:calc((100% - var(--column-spacing) * 2) * 0.5742753623188404);margin-inline-start:var(--column-spacing)">
+                                <h1 id="block-f77fd29df28e44eca51748180725456a" class="notion-heading"><span
+                                        class="notion-heading__anchor"
+                                        id="f77fd29df28e44eca51748180725456a"></span><span
+                                        class="notion-semantic-string"><span>Welcome to Aether</span></span></h1>
+                                <blockquote id="block-a54044b9ec2d48da85a8602367839e12" class="notion-quote"><span
+                                        class="notion-semantic-string"><span>Aether is a clean documentation and
+                                            knowledge-base template for Super.</span></span></blockquote>
+                                <h2 id="block-0c01dcc2adf9484aac8cc8196207b77d" class="notion-heading"><span
+                                        class="notion-heading__anchor"
+                                        id="0c01dcc2adf9484aac8cc8196207b77d"></span><span
+                                        class="notion-semantic-string"><span>Features</span></span></h2>
+                                <ul class="notion-bulleted-list">
+                                    <li id="block-5d83d3e4aa224af7b8f95c5d4cd21c05" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Fully custom layout optimised for quick
+                                                and easy navigation</span></span></li>
+                                    <li id="block-1c632f9327204b3c9ba4564d2962dd3e" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Light and clean design</span></span>
+                                    </li>
+                                    <li id="block-86e78cd5d1cc475893a5adacbecdfe5b" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Content navigation footer</span></span>
+                                    </li>
+                                    <li id="block-846cb1e717514a7bad433d4669019322" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Active link styles</span></span></li>
+                                    <li id="block-eb2a56f04d9249c8bf84890a0e82e216" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Custom main site footer</span></span>
+                                    </li>
+                                    <li id="block-43635474e9a647dd8a581c3a9df460b0" class="notion-list-item"><span
+                                            class="notion-semantic-string"><span>Call to action button</span></span>
+                                    </li>
+                                </ul>
+                                <div id="block-ae9b9db25f6e40f590367f0e3115bb7a" class="notion-text">
+                                    <p class="notion-text__content"><span class="notion-semantic-string"><span><a
+                                                    class="notion-link link" href="/getting-started"><strong>Get started
+                                                        →</strong></a></span></span></p>
+                                </div>
+                                <div id="block-7cda0654247c4bf7b7078eda5b368ba8" class="notion-text">
+                                    <p class="notion-text__content"><span class="notion-semantic-string"></span></p>
+                                </div>
+                                <h2 id="block-5ecdb007f98d4d14a91c5eb293f89022" class="notion-heading"><span
+                                        class="notion-heading__anchor"
+                                        id="5ecdb007f98d4d14a91c5eb293f89022"></span><span
+                                        class="notion-semantic-string"><span>Quick start</span></span></h2>
+                                <div id="block-9fe49fd7b9db4adc8f86a516c66249f8"
+                                    class="notion-collection inline collection-2670a913d72c45deb0638a9199446abb">
+                                    <div class="notion-collection__header-wrapper">
+                                        <h3 class="notion-collection__header"><a class="notion-anchor"
+                                                href="#9fe49fd7b9db4adc8f86a516c66249f8"></a><span
+                                                class="notion-semantic-string"><span>Quick start</span></span></h3>
+                                    </div>
+                                    <div class="notion-collection-gallery large">
+                                        <div id="block-c71ce0bf53764d3cb5abd73ab289d9ee"
+                                            class="notion-collection-card gallery"><a
+                                                class="notion-link notion-collection-card__anchor"
+                                                href="/getting-started">Getting Started</a>
+                                            <div class="notion-collection-card__cover large"><span
+                                                    style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                        alt="Getting Started"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        decoding="async" data-nimg="fill"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%" /><noscript><img
+                                                            alt="Getting Started" sizes="100vw"
+                                                            srcSet="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=640&amp;q=80 640w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=750&amp;q=80 750w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=828&amp;q=80 828w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=1080&amp;q=80 1080w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=1200&amp;q=80 1200w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=1920&amp;q=80 1920w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=2048&amp;q=80 2048w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=3840&amp;q=80 3840w"
+                                                            src="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fb3ffd224-aa5e-462d-b184-9079962d01c8.png&amp;w=3840&amp;q=80"
+                                                            decoding="async" data-nimg="fill"
+                                                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%"
+                                                            loading="lazy" /></noscript></span></div>
+                                            <div class="notion-collection-card__content">
+                                                <div class="notion-property notion-property__title"><span
+                                                        class="notion-semantic-string"><span>Getting
+                                                            Started</span></span></div>
+                                            </div>
+                                        </div>
+                                        <div id="block-ae06017c45474c79a732b3c028f18ab8"
+                                            class="notion-collection-card gallery"><a
+                                                class="notion-link notion-collection-card__anchor"
+                                                href="/using-aether">Using Aether</a>
+                                            <div class="notion-collection-card__cover large"><span
+                                                    style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                        alt="Using Aether"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        decoding="async" data-nimg="fill"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%" /><noscript><img
+                                                            alt="Using Aether" sizes="100vw"
+                                                            srcSet="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=640&amp;q=80 640w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=750&amp;q=80 750w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=828&amp;q=80 828w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=1080&amp;q=80 1080w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=1200&amp;q=80 1200w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=1920&amp;q=80 1920w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=2048&amp;q=80 2048w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=3840&amp;q=80 3840w"
+                                                            src="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Fde4e9e8d-d859-4a68-b0c5-068f16b5545b.png&amp;w=3840&amp;q=80"
+                                                            decoding="async" data-nimg="fill"
+                                                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%"
+                                                            loading="lazy" /></noscript></span></div>
+                                            <div class="notion-collection-card__content">
+                                                <div class="notion-property notion-property__title"><span
+                                                        class="notion-semantic-string"><span>Using Aether</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="block-9e7a297a948341d18174abda85f14812"
+                                            class="notion-collection-card gallery"><a
+                                                class="notion-link notion-collection-card__anchor"
+                                                href="/blocks">Blocks</a>
+                                            <div class="notion-collection-card__cover large"><span
+                                                    style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                        alt="Blocks"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        decoding="async" data-nimg="fill"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%" /><noscript><img
+                                                            alt="Blocks" sizes="100vw"
+                                                            srcSet="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=640&amp;q=80 640w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=750&amp;q=80 750w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=828&amp;q=80 828w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=1080&amp;q=80 1080w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=1200&amp;q=80 1200w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=1920&amp;q=80 1920w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=2048&amp;q=80 2048w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=3840&amp;q=80 3840w"
+                                                            src="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2Ff42b452e-87c0-467e-a502-eb4bf259cefb.png&amp;w=3840&amp;q=80"
+                                                            decoding="async" data-nimg="fill"
+                                                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%"
+                                                            loading="lazy" /></noscript></span></div>
+                                            <div class="notion-collection-card__content">
+                                                <div class="notion-property notion-property__title"><span
+                                                        class="notion-semantic-string"><span>Blocks</span></span></div>
+                                            </div>
+                                        </div>
+                                        <div id="block-d4ea2eb1513d4ef7b700adec5a5e156c"
+                                            class="notion-collection-card gallery"><a
+                                                class="notion-link notion-collection-card__anchor"
+                                                href="/documentation">Documentation example</a>
+                                            <div class="notion-collection-card__cover large"><span
+                                                    style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                                        alt="Documentation example"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        decoding="async" data-nimg="fill"
+                                                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%" /><noscript><img
+                                                            alt="Documentation example" sizes="100vw"
+                                                            srcSet="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=640&amp;q=80 640w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=750&amp;q=80 750w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=828&amp;q=80 828w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=1080&amp;q=80 1080w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=1200&amp;q=80 1200w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=1920&amp;q=80 1920w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=2048&amp;q=80 2048w, /_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=3840&amp;q=80 3840w"
+                                                            src="/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1019cc18-d8c9-48d1-85b0-b9287d8bf717%2Fimages%2F336582ae-4445-4153-aaf3-996bc7dc9364.png&amp;w=3840&amp;q=80"
+                                                            decoding="async" data-nimg="fill"
+                                                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover;object-position:center 50%"
+                                                            loading="lazy" /></noscript></span></div>
+                                            <div class="notion-collection-card__content">
+                                                <div class="notion-property notion-property__title"><span
+                                                        class="notion-semantic-string"><span>Documentation
+                                                            example</span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="block-2aa736185cb54a038f11f52927855b86" class="notion-column"
+                                style="width:calc((100% - var(--column-spacing) * 2) * 0.17572463768115973);margin-inline-start:var(--column-spacing)">
+                                <div id="block-5215d66594ed4a96be0df6530c8c8eab" class="notion-text">
+                                    <p class="notion-text__content"><span class="notion-semantic-string"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="super-footer corners"><a class="notion-link super-footer__logo" href="/">
+                    <div class="super-footer__logo-image" style="width:156px"><span
+                            style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img
+                                alt="Logo"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                decoding="async" data-nimg="fill"
+                                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left" /><noscript><img
+                                    alt="Logo" sizes="100vw"
+                                    srcSet="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 640w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 750w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 828w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 1080w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 1200w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 1920w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 2048w, https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg 3840w"
+                                    src="https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg"
+                                    decoding="async" data-nimg="fill"
+                                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                                    loading="lazy" /></noscript></span></div>
+                </a>
+                <div class="super-footer__icons"><a href="https://twitter.com/super_" class="notion-link"
+                        target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                            <title>Twitter</title>
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                            </path>
+                        </svg></a><a href="https://github.com/super-so/" class="notion-link" target="_blank"
+                        rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24" width="24" height="24">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                            </path>
+                        </svg></a><a href="https://instagram.com/superhq_" class="notion-link" target="_blank"
+                        rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24" width="24" height="24">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
+                            </path>
+                        </svg></a></div>
+                <div class="super-footer__links"><a href="https://s.super.so/aether"
+                        class="notion-link super-footer__link" target="_blank" rel="noopener noreferrer">
+                        <p>Duplicate</p>
+                    </a><a href="https://super.so/market" class="notion-link super-footer__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>More Templates</p>
+                    </a><a href="https://super.so/" class="notion-link super-footer__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>Super</p>
+                    </a></div>
+                <p class="super-footer__footnote">© Super Publishing Co.</p>
+            </div>
+        </div><a href="https://s.super.so/badge" target="_blank" rel="noopener noreferrer">
+            <div class="super-badge"><span
+                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                        style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                            style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                            alt="" aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2718%27%20height=%2718%27/%3e" /></span><img
+                        srcSet="/images/super-icon.svg 1x" src="/images/super-icon.svg" decoding="async"
+                        data-nimg="intrinsic"
+                        style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" /></span><span>Made
+                    with Super</span></div>
+        </a>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{"records":{"block":{"27f6a167a6d94dc18877ab25931cde6f":{"id":"27f6a167a6d94dc18877ab25931cde6f","children":["38bf2c4c7c934bcf9b08a16e5c3602de","5961e34f189547d785045afe9e43e9d0"],"hasContent":true,"uri":"/27f6a167a6d94dc18877ab25931cde6f","parentId":"aaa90051d0534fff9b097aca1bffb2a0","title":[["Aether"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636713747392,"lastEditedTime":1666919520000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"8393f6b0-dc72-440d-bc60-987a29d87db2"}]}],"fullWidth":true,"smallText":false,"noCover":true,"superProperties":{},"propertyValues":{}},"getting-started":{"id":"getting-started","children":[],"hasContent":true,"uri":"/getting-started","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Getting Started"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/692227fd-0b99-4cec-8c41-489c126164bc.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636714858506,"lastEditedTime":1667390400000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"superProperties":{}},"using-aether":{"id":"using-aether","children":[],"hasContent":true,"uri":"/using-aether","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Using Aether"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/c056533b-a96b-4d28-a4bf-fdc3ab4cb09d.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636731073835,"lastEditedTime":1659663480000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"8393f6b0-dc72-440d-bc60-987a29d87db2"}]}],"superProperties":{}},"blocks":{"id":"blocks","children":[],"hasContent":true,"uri":"/blocks","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Blocks"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/fb3e18fe-8439-41e4-aa35-43b5c2b35556.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636723037215,"lastEditedTime":1666784100000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"superProperties":{}},"documentation":{"id":"documentation","children":[],"hasContent":true,"uri":"/documentation","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Documentation"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/d9d93f6e-6dac-4ac2-b11c-29e8e3c3c0ad.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636733167476,"lastEditedTime":1658825460000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"superProperties":{}},"design-system":{"id":"design-system","children":[],"hasContent":true,"uri":"/design-system","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Design System"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/49fbc82e-f38e-479c-9463-4c20b1fe7c7b.svg","coverPosition":0.7887,"cardCoverPosition":0,"createdTime":1636733177994,"lastEditedTime":1658308980000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"superProperties":{}},"8c59febf3e2e494bb9b1bf9f8c7a8656":{"id":"8c59febf3e2e494bb9b1bf9f8c7a8656","children":[],"hasContent":true,"uri":"/8c59febf3e2e494bb9b1bf9f8c7a8656","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[["Aether Tools"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/4f1c45f5-97d3-434f-995f-362047416b72.svg","coverPosition":0,"cardCoverPosition":0,"createdTime":1636719072969,"lastEditedTime":1658307780000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"superProperties":{}},"c71ce0bf53764d3cb5abd73ab289d9ee":{"id":"c71ce0bf53764d3cb5abd73ab289d9ee","children":[],"hasContent":false,"uri":"/c71ce0bf53764d3cb5abd73ab289d9ee","parentId":"2670a913d72c45deb0638a9199446abb","title":[["Getting Started"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","coverPosition":0.5,"cardCoverPosition":0,"createdTime":1636713747390,"lastEditedTime":1637070600000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"cover":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/b3ffd224-aa5e-462d-b184-9079962d01c8.png","superProperties":{"link":"X\u003evx"},"propertyValues":{"title":[["Getting Started"]],"X\u003evx":[["https://aether.super.site/getting-started",[["a","/getting-started"]]]]},"values":[{"id":"title","name":"Name","type":"title","visible":true,"value":[["Getting Started"]],"options":null},{"id":"X\u003evx","name":"super:Link","type":"url","visible":true,"value":[["https://aether.super.site/getting-started",[["a","/getting-started"]]]],"options":null}]},"ae06017c45474c79a732b3c028f18ab8":{"id":"ae06017c45474c79a732b3c028f18ab8","children":[],"hasContent":false,"uri":"/ae06017c45474c79a732b3c028f18ab8","parentId":"2670a913d72c45deb0638a9199446abb","title":[["Using Aether"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","coverPosition":0.5,"cardCoverPosition":0,"createdTime":1636713747390,"lastEditedTime":1637070600000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"cover":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/de4e9e8d-d859-4a68-b0c5-068f16b5545b.png","superProperties":{"link":"X\u003evx"},"propertyValues":{"title":[["Using Aether"]],"X\u003evx":[["https://aether.super.site/using-aether",[["a","/using-aether"]]]]},"values":[{"id":"title","name":"Name","type":"title","visible":true,"value":[["Using Aether"]],"options":null},{"id":"X\u003evx","name":"super:Link","type":"url","visible":true,"value":[["https://aether.super.site/using-aether",[["a","/using-aether"]]]],"options":null}]},"9e7a297a948341d18174abda85f14812":{"id":"9e7a297a948341d18174abda85f14812","children":[],"hasContent":false,"uri":"/9e7a297a948341d18174abda85f14812","parentId":"2670a913d72c45deb0638a9199446abb","title":[["Blocks"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","coverPosition":0.5,"cardCoverPosition":0.5,"createdTime":1636713747391,"lastEditedTime":1637070600000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"cover":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/f42b452e-87c0-467e-a502-eb4bf259cefb.png","superProperties":{"link":"X\u003evx"},"propertyValues":{"title":[["Blocks"]],"X\u003evx":[["https://aether.super.site/blocks",[["a","/blocks"]]]]},"values":[{"id":"title","name":"Name","type":"title","visible":true,"value":[["Blocks"]],"options":null},{"id":"X\u003evx","name":"super:Link","type":"url","visible":true,"value":[["https://aether.super.site/blocks",[["a","/blocks"]]]],"options":null}]},"d4ea2eb1513d4ef7b700adec5a5e156c":{"id":"d4ea2eb1513d4ef7b700adec5a5e156c","children":[],"hasContent":false,"uri":"/d4ea2eb1513d4ef7b700adec5a5e156c","parentId":"2670a913d72c45deb0638a9199446abb","title":[["Documentation example"]],"type":"page","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","coverPosition":0.5,"cardCoverPosition":0,"createdTime":1636713747389,"lastEditedTime":1637070600000,"createdBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"lastEditedBy":[{"0":"‣","1":[{"0":"u","1":"c30c536f-9413-44f2-9a28-1a988c1e8bfa"}]}],"cover":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/336582ae-4445-4153-aaf3-996bc7dc9364.png","superProperties":{"link":"X\u003evx"},"propertyValues":{"title":[["Documentation example"]],"X\u003evx":[["https://aether.super.site/documentation",[["a","/documentation"]]]]},"values":[{"id":"title","name":"Name","type":"title","visible":true,"value":[["Documentation example"]],"options":null},{"id":"X\u003evx","name":"super:Link","type":"url","visible":true,"value":[["https://aether.super.site/documentation",[["a","/documentation"]]]],"options":null}]},"38bf2c4c7c934bcf9b08a16e5c3602de":{"id":"38bf2c4c7c934bcf9b08a16e5c3602de","children":["123d6ef2e0c340219901710c45d02a1a","bce2bb4fa2f64185b1b5c494ee0dd7e6","2aa736185cb54a038f11f52927855b86"],"hasContent":true,"uri":"/38bf2c4c7c934bcf9b08a16e5c3602de","parentId":"27f6a167a6d94dc18877ab25931cde6f","title":null,"type":"column_list","multiplyer":0.9999999999999996},"123d6ef2e0c340219901710c45d02a1a":{"id":"123d6ef2e0c340219901710c45d02a1a","children":["96fba011b7534f28bb8fadb33af74bb3","16788c8fb62d47e9b7faa38f6df8b632","41b2a597046744a0aa07c97409fcebf5"],"hasContent":true,"uri":"/123d6ef2e0c340219901710c45d02a1a","parentId":"38bf2c4c7c934bcf9b08a16e5c3602de","title":null,"type":"column","ratio":0.25},"96fba011b7534f28bb8fadb33af74bb3":{"id":"96fba011b7534f28bb8fadb33af74bb3","children":[],"hasContent":false,"uri":"/96fba011b7534f28bb8fadb33af74bb3","parentId":"123d6ef2e0c340219901710c45d02a1a","title":null,"type":"transclusion_reference","container":"72ad6a3177a54a19b663c3092bc8e787"},"72ad6a3177a54a19b663c3092bc8e787":null,"16788c8fb62d47e9b7faa38f6df8b632":{"id":"16788c8fb62d47e9b7faa38f6df8b632","children":["f196d723406f4eb18fedcc678bda275e","getting-started","using-aether","blocks","a71422eeb3c44613bdef657e8f38aca7","documentation","design-system"],"hasContent":true,"uri":"/16788c8fb62d47e9b7faa38f6df8b632","parentId":"123d6ef2e0c340219901710c45d02a1a","title":null,"type":"transclusion_container"},"f196d723406f4eb18fedcc678bda275e":{"id":"f196d723406f4eb18fedcc678bda275e","children":[],"hasContent":false,"uri":"/f196d723406f4eb18fedcc678bda275e","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Getting started",[["h","ColorGray"]]]],"type":"text"},"a71422eeb3c44613bdef657e8f38aca7":{"id":"a71422eeb3c44613bdef657e8f38aca7","children":[],"hasContent":false,"uri":"/a71422eeb3c44613bdef657e8f38aca7","parentId":"16788c8fb62d47e9b7faa38f6df8b632","title":[["Use cases",[["h","ColorGray"]]]],"type":"text"},"41b2a597046744a0aa07c97409fcebf5":{"id":"41b2a597046744a0aa07c97409fcebf5","children":["0f3b67d8771c41caae698eb80da67ad7","3b77179aa72a4a9fac1af98a18b32a6c","b577276173ed4bfab18b9667b0b9190b","b61c2587246844e484f521641b0767b5","5a65688b88b240f192bdcac701180238","75326d296c1b4a7c81b0a17d7976cde6","9a3dcf133fc440caa4c703daf0b4e16c","885dd2bda1dd4cb5a4ab03c5b7468098","8c59febf3e2e494bb9b1bf9f8c7a8656","5062ba111548409d8ca6c6bb37686bc5","2085af8413a44760bdc8471e370e0379","1dbf19e525e34fb7afc093662c4dc7e1","3c688c9d85cb4b64842c267ae5fd3573","18c6692e05354ad6911031e9bb22c7bb","ac51fe8942444594a1d848f7ea5bf2d8","fef2b3ed7de6441babd0793c3325ab9d"],"hasContent":true,"uri":"/41b2a597046744a0aa07c97409fcebf5","parentId":"123d6ef2e0c340219901710c45d02a1a","title":[["Control Panel",[["h","ColorGray"],["b",null]]]],"type":"toggle","subType":null,"depth":null,"color":"BgGray"},"0f3b67d8771c41caae698eb80da67ad7":{"id":"0f3b67d8771c41caae698eb80da67ad7","children":[],"hasContent":false,"uri":"/0f3b67d8771c41caae698eb80da67ad7","parentId":"41b2a597046744a0aa07c97409fcebf5","title":null,"type":"divider"},"3b77179aa72a4a9fac1af98a18b32a6c":{"id":"3b77179aa72a4a9fac1af98a18b32a6c","children":[],"hasContent":false,"uri":"/3b77179aa72a4a9fac1af98a18b32a6c","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"b577276173ed4bfab18b9667b0b9190b":{"id":"b577276173ed4bfab18b9667b0b9190b","children":[],"hasContent":false,"uri":"/b577276173ed4bfab18b9667b0b9190b","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[["Use the button below to add a new page. When it's ready to go live, drag it up into the synced block in the sidebar above.",[["h","ColorGray"],["b",null]]]],"type":"text"},"b61c2587246844e484f521641b0767b5":{"id":"b61c2587246844e484f521641b0767b5","children":[],"hasContent":false,"uri":"/b61c2587246844e484f521641b0767b5","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"5a65688b88b240f192bdcac701180238":null,"75326d296c1b4a7c81b0a17d7976cde6":{"id":"75326d296c1b4a7c81b0a17d7976cde6","children":[],"hasContent":false,"uri":"/75326d296c1b4a7c81b0a17d7976cde6","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"9a3dcf133fc440caa4c703daf0b4e16c":{"id":"9a3dcf133fc440caa4c703daf0b4e16c","children":[],"hasContent":false,"uri":"/9a3dcf133fc440caa4c703daf0b4e16c","parentId":"41b2a597046744a0aa07c97409fcebf5","title":null,"type":"divider"},"885dd2bda1dd4cb5a4ab03c5b7468098":{"id":"885dd2bda1dd4cb5a4ab03c5b7468098","children":[],"hasContent":false,"uri":"/885dd2bda1dd4cb5a4ab03c5b7468098","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"5062ba111548409d8ca6c6bb37686bc5":{"id":"5062ba111548409d8ca6c6bb37686bc5","children":[],"hasContent":false,"uri":"/5062ba111548409d8ca6c6bb37686bc5","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"2085af8413a44760bdc8471e370e0379":{"id":"2085af8413a44760bdc8471e370e0379","children":[],"hasContent":false,"uri":"/2085af8413a44760bdc8471e370e0379","parentId":"41b2a597046744a0aa07c97409fcebf5","title":null,"type":"divider"},"1dbf19e525e34fb7afc093662c4dc7e1":{"id":"1dbf19e525e34fb7afc093662c4dc7e1","children":[],"hasContent":false,"uri":"/1dbf19e525e34fb7afc093662c4dc7e1","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"3c688c9d85cb4b64842c267ae5fd3573":{"id":"3c688c9d85cb4b64842c267ae5fd3573","children":[],"hasContent":false,"uri":"/3c688c9d85cb4b64842c267ae5fd3573","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[["If you want to hide pages, you can move them into the toggle below ↓",[["h","ColorGray"],["b",null]]]],"type":"text"},"18c6692e05354ad6911031e9bb22c7bb":{"id":"18c6692e05354ad6911031e9bb22c7bb","children":[],"hasContent":false,"uri":"/18c6692e05354ad6911031e9bb22c7bb","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"ac51fe8942444594a1d848f7ea5bf2d8":{"id":"ac51fe8942444594a1d848f7ea5bf2d8","children":["e5ddbc52b9b248978ea265c97ede825f","a188e6084a264bda99330568be8881da","9f318e3dfea64b6c9c5799639e7bc4bb"],"hasContent":true,"uri":"/ac51fe8942444594a1d848f7ea5bf2d8","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[["Hidden Pages",[["h","ColorGray"]]]],"type":"toggle","subType":null,"depth":null,"color":"BgGray"},"e5ddbc52b9b248978ea265c97ede825f":{"id":"e5ddbc52b9b248978ea265c97ede825f","children":[],"hasContent":false,"uri":"/e5ddbc52b9b248978ea265c97ede825f","parentId":"ac51fe8942444594a1d848f7ea5bf2d8","title":[],"type":"text"},"a188e6084a264bda99330568be8881da":{"id":"a188e6084a264bda99330568be8881da","children":[],"hasContent":false,"uri":"/a188e6084a264bda99330568be8881da","parentId":"ac51fe8942444594a1d848f7ea5bf2d8","title":[],"type":"text"},"9f318e3dfea64b6c9c5799639e7bc4bb":{"id":"9f318e3dfea64b6c9c5799639e7bc4bb","children":[],"hasContent":false,"uri":"/9f318e3dfea64b6c9c5799639e7bc4bb","parentId":"ac51fe8942444594a1d848f7ea5bf2d8","title":[],"type":"text"},"fef2b3ed7de6441babd0793c3325ab9d":{"id":"fef2b3ed7de6441babd0793c3325ab9d","children":[],"hasContent":false,"uri":"/fef2b3ed7de6441babd0793c3325ab9d","parentId":"41b2a597046744a0aa07c97409fcebf5","title":[],"type":"text"},"bce2bb4fa2f64185b1b5c494ee0dd7e6":{"id":"bce2bb4fa2f64185b1b5c494ee0dd7e6","children":["f77fd29df28e44eca51748180725456a","a54044b9ec2d48da85a8602367839e12","0c01dcc2adf9484aac8cc8196207b77d","5d83d3e4aa224af7b8f95c5d4cd21c05","1c632f9327204b3c9ba4564d2962dd3e","86e78cd5d1cc475893a5adacbecdfe5b","846cb1e717514a7bad433d4669019322","eb2a56f04d9249c8bf84890a0e82e216","43635474e9a647dd8a581c3a9df460b0","ae9b9db25f6e40f590367f0e3115bb7a","7cda0654247c4bf7b7078eda5b368ba8","5ecdb007f98d4d14a91c5eb293f89022","9fe49fd7b9db4adc8f86a516c66249f8"],"hasContent":true,"uri":"/bce2bb4fa2f64185b1b5c494ee0dd7e6","parentId":"38bf2c4c7c934bcf9b08a16e5c3602de","title":null,"type":"column","ratio":0.5742753623188406},"f77fd29df28e44eca51748180725456a":{"id":"f77fd29df28e44eca51748180725456a","children":[],"hasContent":false,"uri":"/f77fd29df28e44eca51748180725456a","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Welcome to Aether"]],"type":"heading","subType":"header","depth":1},"a54044b9ec2d48da85a8602367839e12":{"id":"a54044b9ec2d48da85a8602367839e12","children":[],"hasContent":false,"uri":"/a54044b9ec2d48da85a8602367839e12","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Aether is a clean documentation and knowledge-base template for Super."]],"type":"quote"},"0c01dcc2adf9484aac8cc8196207b77d":{"id":"0c01dcc2adf9484aac8cc8196207b77d","children":[],"hasContent":false,"uri":"/0c01dcc2adf9484aac8cc8196207b77d","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Features"]],"type":"heading","subType":"sub_header","depth":2},"5d83d3e4aa224af7b8f95c5d4cd21c05":{"id":"5d83d3e4aa224af7b8f95c5d4cd21c05","children":[],"hasContent":false,"uri":"/5d83d3e4aa224af7b8f95c5d4cd21c05","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Fully custom layout optimised for quick and easy navigation"]],"type":"bulleted_list"},"1c632f9327204b3c9ba4564d2962dd3e":{"id":"1c632f9327204b3c9ba4564d2962dd3e","children":[],"hasContent":false,"uri":"/1c632f9327204b3c9ba4564d2962dd3e","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Light and clean design"]],"type":"bulleted_list"},"86e78cd5d1cc475893a5adacbecdfe5b":{"id":"86e78cd5d1cc475893a5adacbecdfe5b","children":[],"hasContent":false,"uri":"/86e78cd5d1cc475893a5adacbecdfe5b","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Content navigation footer"]],"type":"bulleted_list"},"846cb1e717514a7bad433d4669019322":{"id":"846cb1e717514a7bad433d4669019322","children":[],"hasContent":false,"uri":"/846cb1e717514a7bad433d4669019322","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Active link styles"]],"type":"bulleted_list"},"eb2a56f04d9249c8bf84890a0e82e216":{"id":"eb2a56f04d9249c8bf84890a0e82e216","children":[],"hasContent":false,"uri":"/eb2a56f04d9249c8bf84890a0e82e216","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Custom main site footer"]],"type":"bulleted_list"},"43635474e9a647dd8a581c3a9df460b0":{"id":"43635474e9a647dd8a581c3a9df460b0","children":[],"hasContent":false,"uri":"/43635474e9a647dd8a581c3a9df460b0","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Call to action button"]],"type":"bulleted_list"},"ae9b9db25f6e40f590367f0e3115bb7a":{"id":"ae9b9db25f6e40f590367f0e3115bb7a","children":[],"hasContent":false,"uri":"/ae9b9db25f6e40f590367f0e3115bb7a","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Get started →",[["b",null],["a","/getting-started"]]]],"type":"text"},"7cda0654247c4bf7b7078eda5b368ba8":{"id":"7cda0654247c4bf7b7078eda5b368ba8","children":[],"hasContent":false,"uri":"/7cda0654247c4bf7b7078eda5b368ba8","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[],"type":"text"},"5ecdb007f98d4d14a91c5eb293f89022":{"id":"5ecdb007f98d4d14a91c5eb293f89022","children":[],"hasContent":false,"uri":"/5ecdb007f98d4d14a91c5eb293f89022","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Quick start"]],"type":"heading","subType":"sub_header","depth":2},"9fe49fd7b9db4adc8f86a516c66249f8":{"id":"9fe49fd7b9db4adc8f86a516c66249f8","children":[],"hasContent":false,"uri":"/9fe49fd7b9db4adc8f86a516c66249f8","parentId":"bce2bb4fa2f64185b1b5c494ee0dd7e6","title":[["Quick start"]],"type":"collection_inline","spaceId":"43106b71-ddeb-40fe-ac5c-38f9004538b4","collectionId":"2670a913-d72c-45de-b063-8a9199446abb","icon":null,"superProperties":{"link":"X\u003evx"},"views":[{"id":"963feb73-0573-4441-ac83-85e177ff7837","groups":[],"type":"gallery","name":"Gallery view","format":{"gallery_cover":{"type":"page_cover"},"gallery_cover_size":"large"},"visibleColumns":[{"id":"title","name":"Name","type":"title","visible":true},{"id":"X\u003evx","name":"super:Link","type":"url","visible":true}],"items":["c71ce0bf53764d3cb5abd73ab289d9ee","ae06017c45474c79a732b3c028f18ab8","9e7a297a948341d18174abda85f14812","d4ea2eb1513d4ef7b700adec5a5e156c"],"hideTitle":false,"title":[["Quick start"]],"icon":null,"superProperties":{"link":"X\u003evx"}}],"viewIds":["963feb73-0573-4441-ac83-85e177ff7837"],"coverPosition":1,"cover":null,"description":[]},"2aa736185cb54a038f11f52927855b86":{"id":"2aa736185cb54a038f11f52927855b86","children":["3c3ecfaa4df54ddb80d8437beb29ff90","5215d66594ed4a96be0df6530c8c8eab"],"hasContent":true,"uri":"/2aa736185cb54a038f11f52927855b86","parentId":"38bf2c4c7c934bcf9b08a16e5c3602de","title":null,"type":"column","ratio":0.1757246376811598},"3c3ecfaa4df54ddb80d8437beb29ff90":{"id":"3c3ecfaa4df54ddb80d8437beb29ff90","children":[],"hasContent":false,"uri":"/3c3ecfaa4df54ddb80d8437beb29ff90","parentId":"2aa736185cb54a038f11f52927855b86","title":null,"type":"transclusion_reference","container":"2465382826d34cdca97c11d01635a3b6"},"2465382826d34cdca97c11d01635a3b6":null,"5215d66594ed4a96be0df6530c8c8eab":{"id":"5215d66594ed4a96be0df6530c8c8eab","children":[],"hasContent":false,"uri":"/5215d66594ed4a96be0df6530c8c8eab","parentId":"2aa736185cb54a038f11f52927855b86","title":[],"type":"text"},"5961e34f189547d785045afe9e43e9d0":{"id":"5961e34f189547d785045afe9e43e9d0","children":[],"hasContent":false,"uri":"/5961e34f189547d785045afe9e43e9d0","parentId":"27f6a167a6d94dc18877ab25931cde6f","title":null,"type":"transclusion_reference","container":"afc78bfd9ad644f7a1c83ea920c5319b"},"afc78bfd9ad644f7a1c83ea920c5319b":null},"team":{},"entity":{"c30c536f-9413-44f2-9a28-1a988c1e8bfa":{"id":"c30c536f-9413-44f2-9a28-1a988c1e8bfa","name":"Josh Millgate","image":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/176aaf20-fa2e-48fe-9912-315be4e27f04.png"},"8393f6b0-dc72-440d-bc60-987a29d87db2":{"id":"8393f6b0-dc72-440d-bc60-987a29d87db2","name":"Cam Incoll","image":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/c9744255-b568-4fb5-af89-299666a0d4c7.jpg"}},"pageId":"27f6a167a6d94dc18877ab25931cde6f"},"settings":{"siteId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717","domainName":"aether.super.site","name":"Aether","free":false,"fontFamily":"Inter","legacyTheme":"default","language":"en","notionPage":"27f6a167a6d94dc18877ab25931cde6f","pageProperties":false,"viewSwitcher":false,"siteSearch":true,"mondayFirst":false,"noIndex":false,"showBadge":true,"cacheTTL":300000,"manualSync":false,"publishedAt":null,"navbar":{"type":"minimal","style":{"height":70,"textColor":"var(--color-text-default)","backgroundColor":"var(--color-bg-default)","ctaTextColor":"rgba(70, 80, 89, 1)","ctaBackgroundColor":"rgba(228, 245, 254, 1)","isSticky":true,"shadow":{"type":"none","color":"rgba(0,0,0,1)","opacity":12}},"links":[{"label":"Getting started","link":"/getting-started","pageId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::1fd63d65-4d78-4c00-87f3-192d0ec8e426"},{"label":"Using Aether","link":"/using-aether","pageId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::47724310-c129-4683-b266-e4232470ce86"},{"label":"Blocks","link":"/blocks","pageId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::5edf4147-55fe-4c7c-a6fd-7f16e1d707ab"},{"label":"Documentation","link":"/documentation","pageId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::d55a4dfc-3dc0-47d6-a6fb-9fbd916a1b77"},{"label":"Design System","link":"/design-system","pageId":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::064a12ac-213c-47a5-ba0c-a1cde9da44e5"},{"label":"Duplicate","link":"https://superhq.notion.site/Aether-27f6a167a6d94dc18877ab25931cde6f"}],"logo":{"type":"image","width":90,"fontSize":16,"textContent":"Aether","imageContent":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/17440b3c-b9be-4bce-aa73-7c76fa637c20.svg"},"cta":{"type":"url","label":"Duplicate","link":"https://s.super.so/aether","pageId":""}},"footer":{"type":"corners","style":{"textColor":"var(--color-text-default)","backgroundColor":"var(--color-bg-default)"},"links":[{"label":"Duplicate","link":"https://s.super.so/aether"},{"label":"More Templates","link":"https://super.so/market"},{"label":"Super","link":"https://super.so/"}],"logo":{"type":"image","width":156,"fontSize":16,"textContent":"Aether","imageContent":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/logo/d0024a75-1846-4a0f-af20-92be8c124e50.svg"},"socials":[{"type":"twitter","link":"https://twitter.com/super_"},{"type":"github","link":"https://github.com/super-so/"},{"type":"instagram","link":"https://instagram.com/superhq_"}],"footnote":"© Super Publishing Co."},"theme":null,"code":{"global":[{"id":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::7da341fb-f24e-4173-998d-5f8c3103a39f","content":"\u003clink rel=\"stylesheet\" href=\"https://sites.super.so/aether/style.css\"/\u003e\n"}],"head":[],"body":[{"id":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::f9307835-10be-4746-9023-aa606f5e8000","content":"\u003cscript src=\"https://sites.super.so/aether/script.js\"\u003e\u003c/script\u003e"}],"style":[{"id":"1019cc18-d8c9-48d1-85b0-b9287d8bf717:::24828bae-598d-4b5e-bb30-990f5f2767f0","content":""}]},"title":"Aether — Documentation Template","description":"","image":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/cover/1cd40d53-9118-4244-aa75-7788ec97cf13.jpg","keywords":"","hasPassword":false},"head":{"url":"https://aether.super.site/","title":"Aether — Documentation Template","description":"Aether is a clean documentation and knowledge-base template for Super.","root":{"id":"27f6a167a6d94dc18877ab25931cde6f","uri":"/","title":"Aether","icon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg"},"image":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/uploads/cover/1cd40d53-9118-4244-aa75-7788ec97cf13.jpg","favicon":"https://super-static-assets.s3.amazonaws.com/1019cc18-d8c9-48d1-85b0-b9287d8bf717/images/18cde7ae-19ac-4691-8845-1b5d34969385.svg","breadcrumbs":[]},"hasBlocks":true,"isValidPage":true,"pageId":"27f6a167a6d94dc18877ab25931cde6f","pageLocation":"/","passwords":null},"__N_SSP":true},"page":"/","query":{},"buildId":"mws3MSmYChBGMcK2oDpFc","isFallback":false,"dynamicIds":[3697,6617,8126,9653,5581,1512,919,6830,7983],"gssp":true,"scriptLoader":[]}</script>
+</body>
+
+</html>

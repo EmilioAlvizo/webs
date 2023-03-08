@@ -1,0 +1,459 @@
+:root {
+    --color-text-default: #FFF;
+    --color-text-default-light: #64748B;
+    --color-text-gray: #64748B;
+    --color-text-brown: #B45309;
+    --color-text-orange: #EA580C;
+    --color-text-yellow: #F59E0B;
+    --color-text-green: #0D9488;
+    --color-text-blue: #2563EB;
+    --color-text-purple: #7C3AED;
+    --color-text-pink: #DB2777;
+    --color-text-red: #DC2626;
+    --color-bg-default: #000;
+    --color-bg-gray: #64748B;
+    --color-bg-brown: #B45309;
+    --color-bg-orange: #EA580C;
+    --color-bg-yellow: #F59E0B;
+    --color-bg-green: #0D9488;
+    --color-bg-blue: #2563EB;
+    --color-bg-purple: #7C3AED;
+    --color-bg-pink: #DB2777;
+    --color-bg-red: #DC2626;
+    --color-bg-gray-light: #64748B;
+    --color-bg-brown-light: #B45309;
+    --color-bg-orange-light: #EA580C;
+    --color-bg-yellow-light: #F59E0B;
+    --color-bg-green-light: #0D9488;
+    --color-bg-blue-light: #2563EB;
+    --color-bg-purple-light: #7C3AED;
+    --color-bg-pink-light: #DB2777;
+    --color-bg-red-light: #DC2626;
+    --color-pill-default: rgba(255, 255, 255, 0.1);
+    --color-pill-gray: #64748B;
+    --color-pill-brown: #B45309;
+    --color-pill-orange: #EA580C;
+    --color-pill-yellow: #F59E0B;
+    --color-pill-green: #0D9488;
+    --color-pill-blue: #2563EB;
+    --color-pill-purple: #7C3AED;
+    --color-pill-pink: #DB2777;
+    --color-pill-red: #DC2626;
+    --color-ui-hover-bg: rgb(26, 26, 26);
+    --color-card-bg: #000;
+    --color-checkbox-bg: #2563EB;
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-dark: rgba(255, 255, 255, 0.1);
+    --color-code-bg: rgba(239, 239, 239);
+    --scrollbar-background-color: #fafafa;
+    --scrollbar-thumb-color: #c1c1c1;
+    --scrollbar-border-color: #e8e8e8;
+    --navbar-text-color: var(--color-text-default);
+    --navbar-background-color: var(--color-bg-default);
+    --navbar-button-text-color: var(--color-text-default);
+    --navbar-button-background-color: rgba(0, 0, 0, 0.41);
+    --navbar-menu-background-color: var(--navbar-background-color);
+    --footer-text-color: var(--color-text-default);
+    --footer-background-color: var(--color-bg-default);
+    --color-calendar-weekend-bg: undefined
+}
+
+/* 1 */
+:root {
+    --padding-layout: 0.6rem;
+    --border-radii-layout: 5px;
+    --border-thickness-layout: 1px;
+    --border-type-layout: solid;
+    --border-layout: var(--border-thickness-layout) var(--border-type-layout) var(--color-border-default);
+    --layout-max-width: 900px;
+    --column-spacing: 46px;
+    --page-display: unset;
+    --padding-right: calc(env(safe-area-inset-right) + 96px);
+    --padding-left: calc(env(safe-area-inset-left) + 96px);
+    --padding-right-mobile: calc(env(safe-area-inset-right) + 24px);
+    --padding-left-mobile: calc(env(safe-area-inset-left) + 24px);
+    --header-cover-height: 30vh;
+    --header-title-align: left;
+    --header-icon-align: -112px auto auto auto;
+    --header-display: block;
+    --collection-header-border: var(--border-layout);
+    --collection-table-cell-padding: calc(var(--padding-layout) - 0.3rem) calc(var(--padding-layout) - 0.1rem);
+    --collection-list-item-padding: calc(var(--padding-layout) - 0.5rem);
+    --collection-list-item-border-radii: calc(var(--border-radii-layout) - 1px);
+    --collection-card-padding: 0px;
+    --collection-card-title-padding: 0px;
+    --collection-card-content-padding: var(--padding-layout);
+    --collection-card-border-radii: var(--border-radii-layout);
+    --collection-card-gap: 10px;
+    --collection-card-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+    --collection-card-title-size: 0.875rem;
+    --collection-card-cover-height-small: 128px;
+    --collection-card-cover-size-small: 172px;
+    --collection-card-cover-height-medium: 200px;
+    --collection-card-cover-size-medium: 260px;
+    --collection-card-cover-height-large: 200px;
+    --collection-card-cover-size-large: 320px;
+    --collection-card-icon-display: inline-flex;
+    --callout-padding: calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.4rem) calc(var(--padding-layout) + 0.1em);
+    --callout-border-radii: calc(var(--border-radii-layout) - 2px);
+    --callout-border: var(--border-layout);
+    --callout-icon-display: block;
+    --callout-shadow: none;
+    --file-border-radii: calc(var(--border-radii-layout) - 2px);
+    --equation-border-radii: calc(var(--border-radii-layout) - 2px);
+    --divider-border: var(--border-layout);
+    --quote-border: calc(var(--border-thickness-layout) + 2px) solid currentcolor;
+    --code-padding: calc(var(--padding-layout) + 1.4rem);
+    --code-border-radii: var(--border-radii-layout);
+    --tweet-padding: calc(var(--padding-layout) + 0.65rem) calc(var(--padding-layout) + 0.65rem) calc(var(--padding-layout) + 0.05rem) calc(var(--padding-layout) + 0.65rem);
+    --tweet-border-radii: var(--border-radii-layout);
+    --tweet-border: var(--border-layout);
+    --bookmark-padding: calc(var(--padding-layout) + 0.15rem) 0px calc(var(--padding-layout) + 0.025rem) calc(var(--padding-layout) + 0.275rem);
+    --bookmark-border-radii: var(--border-radii-layout);
+    --bookmark-border: var(--border-layout);
+    --bookmark-image-border-radii: 0px calc(var(--border-radii-layout) - 1px) calc(var(--border-radii-layout) - 1px) 0px;
+    --embed-border-radii: calc(var(--border-radii-layout) - 5px);
+    --image-border-radii: calc(var(--border-radii-layout) - 5px);
+    --title-size: 2.5rem;
+    --quote-size: 1.2rem;
+    --heading-size: 1rem;
+    --primary-font: Inter, Inter-fallback, Helvetica,
+        Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Noto Color Emoji,
+        Segoe UI Symbol, Android Emoji, EmojiSymbols, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Noto Sans,
+        sans-serif;
+    --secondary-font: Inter, Inter-fallback, Helvetica,
+        Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Noto Color Emoji,
+        Segoe UI Symbol, Android Emoji, EmojiSymbols, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Noto Sans,
+        sans-serif;
+    --text-weight: normal;
+    --heading-weight: 600;
+    --heading1-size: calc(var(--heading-size) * 1.875);
+    --heading2-size: calc(var(--heading-size) * 1.5);
+    --heading3-size: calc(var(--heading-size) * 1.25);
+    --heading4-size: calc(var(--heading-size) * 1);
+    --heading5-size: calc(var(--heading-size) * 0.8125);
+    --scrollbar-width: 15px;
+    --navbar-height: 56px;
+    --navbar-shadow: ;
+    --navbar-button-border-radii: 50px
+}
+
+html {
+    font-size: 16px;
+    scroll-padding-top: 62px
+}
+
+body {
+    font-family: var(--secondary-font)
+}
+
+/* DB View switcher code*/
+@-webkit-keyframes dropdown-animation-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes dropdown-animation-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@-webkit-keyframes dropdown-animation-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+}
+
+@keyframes dropdown-animation-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+}
+
+.notion-dropdown__menu-header,
+.notion-dropdown__option-icon,
+.notion-dropdown__button svg:first-of-type {
+    display: none !important;
+}
+
+.notion-dropdown {
+    width: 100% !important;
+}
+
+.notion-dropdown__button {
+    justify-content: space-between !important;
+    width: 100% !important;
+    border: 1px solid var(--color-border-default) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+}
+
+.notion-dropdown__menu-wrapper {
+    margin-bottom: 25px !important;
+}
+
+.notion-dropdown__menu {
+    width: 100% !important;
+    border-radius: 8px !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%) !important;
+    background: var(--color-bg-default) !important;
+    border: 1px solid var(--color-border-default) !important;
+    margin-top: 5px !important;
+}
+
+.notion-dropdown__option-list {
+    padding: 0px !important;
+    flex-wrap: wrap !important;
+}
+
+.notion-dropdown__option {
+    padding: 5px 16px !important;
+    height: 50px !important;
+}
+
+.notion-dropdown__option p,
+.notion-dropdown__button-title {
+    font-size: 16px !important;
+}
+
+/* Desktop styles */
+@media all and (min-width: 624px) {
+
+    /* Hide default dropdown */
+    .notion-dropdown__button,
+    .notion-dropdown__menu-header,
+    .notion-dropdown__option-icon {
+        display: none !important;
+    }
+
+    /* Dropdown Initial State */
+    .notion-dropdown__menu.initial-state {
+        z-index: 1 !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Remove animations */
+    .notion-dropdown__menu.animate-in.animate-out,
+    .notion-dropdown__menu.animate-in,
+    .notion-dropdown__menu.animate-out {
+        animation: none !important;
+
+    }
+
+    /* Restyle menu */
+    .notion-dropdown__menu {
+        background: var(--color-bg-default) !important;
+        box-shadow: unset !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        position: relative !important;
+        border: none !important;
+    }
+
+    /* Menu wrapper */
+    .notion-dropdown__menu-wrapper {
+        margin-bottom: 0px !important;
+        position: relative !important;
+    }
+
+    /* Item hover */
+    .notion-dropdown__option:hover {
+        background: rgba(125, 125, 125, .4) !important;
+    }
+
+    /* Text hover style*/
+    .notion-dropdown__option:hover p {
+        color: var(--color-text-default) !important;
+    }
+
+    /* Item margin*/
+    .notion-dropdown__option {
+        margin: 10px 10px;
+        border: 1px solid var(--color-border-default) !important;
+        border-radius: 15px !important;
+        transition: background .2s ease-in-out !important;
+    }
+
+    /* Item text */
+    .notion-dropdown__option p {
+        transition: color .2s ease-in-out !important;
+        color: var(--color-grey) !important;
+        font-size: 18px !important;
+    }
+
+    .notion-dropdown__option-list {
+        display: flex !important;
+        padding: 0 !important;
+        margin-left: -10px !important;
+    }
+
+    .notion-dropdown__option.active-filter {
+        background: var(--color-text-default) !important;
+    }
+
+    .notion-dropdown__option.active-filter p {
+        color: var(--color-bg-default) !important;
+    }
+
+}
+
+.theme-switch {
+    cursor: pointer !important;
+    opacity: .7 !important;
+    width: 22px !important;
+    height: 22px !important;
+    transition: all .2s ease-in-out !important;
+    margin-right: 25px !important;
+    margin-left: -10px !important;
+}
+
+.dark-mode-icon,
+.light-mode-icon {
+    cursor: pointer;
+}
+
+.dark-mode-icon svg,
+.light-mode-icon svg {
+    height: 22px;
+    width: 22px;
+}
+
+.theme-blackout .dark-mode-icon {
+    display: none;
+}
+
+.theme-default .dark-mode-icon {
+    display: flex;
+}
+
+.theme-default .light-mode-icon {
+    display: none;
+}
+
+.theme-blackout .light-mode-icon {
+    display: flex;
+}
+
+/* 22 */
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-regular.svg#Inter") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-500.svg#Inter") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.woff") format("woff"),
+        /* Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-600.svg#Inter") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.woff") format("woff"),
+        /* Modern Browsers */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("https://assets-v2.super.so/global/fonts/Inter/inter-v12-latin-ext_latin_cyrillic-ext_cyrillic-700.svg#Inter") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Inter-fallback";
+    size-adjust: 106.98999999999994%;
+    ascent-override: 90%;
+    src: local("Arial");
+}
